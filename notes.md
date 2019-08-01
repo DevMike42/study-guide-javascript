@@ -53,3 +53,36 @@ a = 10;
 ```js
 var x = 10;
 ``` 
+
+#### **Understanding Uninitialized Variables** ####
+* When a variable is declared and not initialized with a value it has a initial value of `undefined`
+* A mathematical operation that includes and undefined variable will return `NAN` (No A Number)
+* If you concatenate a string with an undefined variable it will return a string of "undefined"
+
+
+#### **JavaScript Operators**
+* (`+`) Add operator. Adds 2 numbers or concatenates 2 variables
+```js
+var num1 = 5;
+var num2 = 10;
+var sum = num1 + num2;
+// Output of sum will be 15
+var string1 = "one";
+var string2 = "two";
+var concat = string1 + string2;
+// Output of concat will be "onetwo"
+var example = string1 + num1;
+// Output of example will be "one5"
+```
+* (`-`) Subtract operator. Acts the same as the addition operator. The only difference is it will only work with numbers. If one variable is not a number it will return `NaN`
+* (`*`) Mulitply operator. Same rules as subtraction.
+* (`/`) Divide operator. 
+* (`++`) Increment operator. Increments a number by 1.
+```js
+var i = 1;
+i++;
+// Output will be 2
+i + 1;
+// Same as i++
+```
+* (`--`) Decrement operator. Decrements a number by 1.
