@@ -14,6 +14,8 @@
 multi-line comment */
 ```
 
+-------------------------------------------------------------------------------
+
 ### **Variables**
 
 #### **Declaring Variables**
@@ -59,8 +61,11 @@ var x = 10;
 * A mathematical operation that includes and undefined variable will return `NAN` (No A Number)
 * If you concatenate a string with an undefined variable it will return a string of "undefined"
 
+-------------------------------------------------------------------------------
 
-#### **JavaScript Operators**
+### **JavaScript Operators**
+
+#### Arithmetic Operators
 * (`+`) Add operator. Adds 2 numbers or concatenates 2 variables
 ```js
 var num1 = 5;
@@ -86,3 +91,72 @@ i + 1;
 // Same as i++
 ```
 * (`--`) Decrement operator. Decrements a number by 1.
+```js
+var i = 10;
+i--;
+// Output wil be 9
+i - 1;
+// Same as i--
+```
+* (`%`) Remainder operator. Gives the remainder of the divison of 2 numbers.
+```js
+var remainder = 5 % 2;
+// Output is 1
+// Output will only be the remainder portion of 5 divided by 2
+```
+_**The remainder operator can also be used to determine if a number is even or odd**_
+```
+17 % 2 = 1 (17 is Odd)
+48 % 2 = 0 (48 is Even)
+```
+_**The remainder operator is sometimes incorrectly referred to as the "modulus" operator. It is very similar to modulus, but does not work properly with negative numbers.**_
+
+
+#### Assignment Operators
+Assignment operators are used to assign values to JavaScript variables
+
+* (`+=`) Will add the value to the right of the operator to the variable
+```
+ex. (x += y) is the same as (x = x + y)
+```
+```js
+var myVar = 1;
+myVar += 5;
+console.log(myVar); // Returns 6
+```
+* (`-=`) Will subtract the value to the right of the operator to the variable
+```
+ex. (x -= y) is the same as (x = x - y)
+```
+```js
+var myVar = 6;
+myVar -= 5;
+console.log(myVar); // Returns 1
+```
+* (`*=`) Multiplies a variable by a number
+```
+ex. (x *= y) is the same as (x = x * y)
+```
+```js
+var myVar = 5;
+myVar *= 5;
+console.log(myVar); // Returns 25
+```
+* (`/=`) Divides a variable by a number
+```
+ex. (x /= y) is the same as (x = x / y)
+```
+```js
+var myVar = 25;
+myVar /= 5;
+console.log(myVar); // Returns 5
+```
+* (`%/`) Finds the remainder of a variable when divided by a number
+```
+ex. (x %= y) is the same as (x = x % y)
+```
+```js
+var myVar = 5;
+myVar %= 2;
+console.log(myVar); // Returns 1
+```
