@@ -65,7 +65,7 @@ var x = 10;
 
 ### **JavaScript Operators**
 
-1. Arithmetic Operators
+1. __Arithmetic Operators__
     * (`+`) Add operator. Adds 2 numbers or concatenates 2 variables
     ```js
     var num1 = 5;
