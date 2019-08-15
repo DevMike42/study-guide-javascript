@@ -65,98 +65,96 @@ var x = 10;
 
 ### **JavaScript Operators**
 
-#### Arithmetic Operators
-* (`+`) Add operator. Adds 2 numbers or concatenates 2 variables
-```js
-var num1 = 5;
-var num2 = 10;
-var sum = num1 + num2;
-// Output of sum will be 15
-var string1 = "one";
-var string2 = "two";
-var concat = string1 + string2;
-// Output of concat will be "onetwo"
-var example = string1 + num1;
-// Output of example will be "one5"
-```
-* (`-`) Subtract operator. Acts the same as the addition operator. The only difference is it will only work with numbers. If one variable is not a number it will return `NaN`
-* (`*`) Mulitply operator. Same rules as subtraction.
-* (`/`) Divide operator. 
-* (`++`) Increment operator. Increments a number by 1.
-```js
-var i = 1;
-i++;
-// Output will be 2
-i + 1;
-// Same as i++
-```
-* (`--`) Decrement operator. Decrements a number by 1.
-```js
-var i = 10;
-i--;
-// Output wil be 9
-i - 1;
-// Same as i--
-```
-* (`%`) Remainder operator. Gives the remainder of the divison of 2 numbers.
-```js
-var remainder = 5 % 2;
-// Output is 1
-// Output will only be the remainder portion of 5 divided by 2
-```
-_**The remainder operator can also be used to determine if a number is even or odd**_
-```
-17 % 2 = 1 (17 is Odd)
-48 % 2 = 0 (48 is Even)
-```
-_**The remainder operator is sometimes incorrectly referred to as the "modulus" operator. It is very similar to modulus, but does not work properly with negative numbers.**_
+1. Arithmetic Operators
+    * (`+`) Add operator. Adds 2 numbers or concatenates 2 variables
+    ```js
+    var num1 = 5;
+    var num2 = 10;
+    var sum = num1 + num2;
+    // Output of sum will be 15
+    var string1 = "one";
+    var string2 = "two";
+    var concat = string1 + string2;
+    // Output of concat will be "onetwo"
+    var example = string1 + num1;
+    // Output of example will be "one5"
+    ```
+    * (`-`) Subtract operator. Acts the same as the addition operator. The only difference is it will only work with numbers. If one variable is not a number it will return `NaN`
+    * (`*`) Mulitply operator. Same rules as subtraction.
+    * (`/`) Divide operator. 
+    * (`++`) Increment operator. Increments a number by 1.
+    ```js
+    var i = 1;
+    i++;
+    // Output will be 2
+    i + 1;
+    // Same as i++
+    ```
+    * (`--`) Decrement operator. Decrements a number by 1.
+    ```js
+    var i = 10;
+    i--;
+    // Output wil be 9
+    i - 1;
+    // Same as i--
+    ```
+    * (`%`) Remainder operator. Gives the remainder of the divison of 2 numbers.
+    ```js
+    var remainder = 5 % 2;
+    // Output is 1
+    // Output will only be the remainder portion of 5 divided by 2
+    ```
+    _The remainder operator can also be used to determine if a number is even or odd_
+    ```
+    17 % 2 = 1 (17 is Odd)
+    48 % 2 = 0 (48 is Even)
+    ```
+    _The remainder operator is sometimes incorrectly referred to as the "modulus" operator. It is very similar to modulus, but does not work properly with negative numbers._
 
 
-#### Assignment Operators
-Assignment operators are used to assign values to JavaScript variables
-
-* (`+=`) Will add the value to the right of the operator to the variable
-```
-ex. (x += y) is the same as (x = x + y)
-```
-```js
-var myVar = 1;
-myVar += 5;
-console.log(myVar); // Returns 6
-```
-* (`-=`) Will subtract the value to the right of the operator to the variable
-```
-ex. (x -= y) is the same as (x = x - y)
-```
-```js
-var myVar = 6;
-myVar -= 5;
-console.log(myVar); // Returns 1
-```
-* (`*=`) Multiplies a variable by a number
-```
-ex. (x *= y) is the same as (x = x * y)
-```
-```js
-var myVar = 5;
-myVar *= 5;
-console.log(myVar); // Returns 25
-```
-* (`/=`) Divides a variable by a number
-```
-ex. (x /= y) is the same as (x = x / y)
-```
-```js
-var myVar = 25;
-myVar /= 5;
-console.log(myVar); // Returns 5
-```
-* (`%/`) Finds the remainder of a variable when divided by a number
-```
-ex. (x %= y) is the same as (x = x % y)
-```
-```js
-var myVar = 5;
-myVar %= 2;
-console.log(myVar); // Returns 1
-```
+2. __Assignment Operators__ - Assignment operators are used to assign values to JavaScript variables
+    * (`+=`) Will add the value to the right of the operator to the variable
+    ```
+    ex. (x += y) is the same as (x = x + y)
+    ```
+    ```js
+    var myVar = 1;
+    myVar += 5;
+    console.log(myVar); // Returns 6
+    ```
+    * (`-=`) Will subtract the value to the right of the operator to the variable
+    ```
+    ex. (x -= y) is the same as (x = x - y)
+    ```
+    ```js
+    var myVar = 6;
+    myVar -= 5;
+    console.log(myVar); // Returns 1
+    ```
+    * (`*=`) Multiplies a variable by a number
+    ```
+    ex. (x *= y) is the same as (x = x * y)
+    ```
+    ```js
+    var myVar = 5;
+    myVar *= 5;
+    console.log(myVar); // Returns 25
+    ```
+    * (`/=`) Divides a variable by a number
+    ```
+    ex. (x /= y) is the same as (x = x / y)
+    ```
+    ```js
+    var myVar = 25;
+    myVar /= 5;
+    console.log(myVar); // Returns 5
+    ```
+    * (`%/`) Finds the remainder of a variable when divided by a number
+    ```
+    ex. (x %= y) is the same as (x = x % y)
+    ```
+    ```js
+    var myVar = 5;
+    myVar %= 2;
+    console.log(myVar); // Returns 1
+    ```
