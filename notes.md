@@ -158,3 +158,24 @@ var x = 10;
     myVar %= 2;
     console.log(myVar); // Returns 1
     ```
+
+-------------------------------------------------------------------------------
+
+### **Strings**
+
+1. __Literal Quotes within Strings__ - To insert literal quotes within the quotes of a defined string, use `\` in front of the starting and ending quotes.
+```js
+var myString = "I am a \"quote within\" a string.";
+```
+```
+Output = I am a "quote within" a string.
+```
+
+2. __Using Single Quotes in Strings__ - Single or Double quotes function the same individually. Single quotes can be used if for example defining an `<a>` tag with attributes.
+```js
+var myTag = '<a href="http://www.example.com" target="_blank">Link</a>';
+```
+```
+Output = <a href="http://www.example.com" target="_blank">Link</a>
+```
+
