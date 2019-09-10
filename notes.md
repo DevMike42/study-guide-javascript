@@ -179,3 +179,13 @@ var myTag = '<a href="http://www.example.com" target="_blank">Link</a>';
 Output = <a href="http://www.example.com" target="_blank">Link</a>
 ```
 
+3. __Escape Sequences__ - Gives you the ability to add certain characters and formatting to a string that you would not normally be able to type out. (ex. a backslash, tab, or newline, etc.)
+
+    * `\'` - Single quote
+    * `\'` - Double quote
+    * `\\` - Backslash
+    * `\n` - New Line
+    * `\r` - Carriage return
+    * `\t` - Tab
+    * `\b` - Backspace
+    * `\f` - Form feed
