@@ -189,3 +189,31 @@ Output = <a href="http://www.example.com" target="_blank">Link</a>
     * `\t` - Tab
     * `\b` - Backspace
     * `\f` - Form feed
+
+    ```js
+    var myString = "FirstLine\n\t\bSecondLine\nThirdline";
+
+    /* Output 
+    FirstLine
+        \SecondLine
+    Thirdline
+    */
+    ```
+
+4. __Concatenating Strings using the Plus Operator__ - Build new strings out of other strings by concatentating them together.
+
+```js
+var myString = "This is the start. " + "This is the end";
+
+// Output - This is the start. This is the end.
+```
+
+5. __Concatentating Strings using the += Operator__ - The += operator concatenates one string onto the end of another.
+
+```js
+var myString = "This is the first sentence. ";
+myString += "This is the second sentence.";
+
+// Output - This is the first sentence. This is the second sentence.
+```
+
