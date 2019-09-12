@@ -1,8 +1,6 @@
-# JavaScript
+# Basic JavaScript
 
-## Basic JavaScript
-
-### **Comments**
+## **Comments**
 * Comments are lines of code that are intentionally ignored
 * They are a way of providing notes for yourself or whoever has to read and understand your code
 * `//` is used to comment out a single line of code
@@ -16,9 +14,9 @@ multi-line comment */
 
 -------------------------------------------------------------------------------
 
-### **Variables**
+## **Variables**
 
-#### **Declaring Variables**
+### **Declaring Variables**
 * Allow computers to store and manipulate data
 * Variables use a "label" to point to the data rather than pointing to the data itself
 * Data types
@@ -35,7 +33,7 @@ multi-line comment */
 var myName;
 ```
 
-#### **Storing values with the Assignment Operator**
+### **Storing values with the Assignment Operator**
 * Values are assigned to a variable using `=` as the Assignment Operator
 * The label is on the left of the `=`, the value goes on the right followed by a `;` as a closing tag
 ```js
@@ -56,14 +54,14 @@ a = 10;
 var x = 10;
 ``` 
 
-#### **Understanding Uninitialized Variables** ####
+### **Understanding Uninitialized Variables** ####
 * When a variable is declared and not initialized with a value it has a initial value of `undefined`
 * A mathematical operation that includes and undefined variable will return `NAN` (No A Number)
 * If you concatenate a string with an undefined variable it will return a string of "undefined"
 
 -------------------------------------------------------------------------------
 
-### **JavaScript Operators**
+## **JavaScript Operators**
 
 1. __Arithmetic Operators__
     * (`+`) Add operator. Adds 2 numbers or concatenates 2 variables
@@ -161,7 +159,7 @@ var x = 10;
 
 -------------------------------------------------------------------------------
 
-### **Strings**
+## **Strings**
 
 1. __Literal Quotes within Strings__ - To insert literal quotes within the quotes of a defined string, use `\` in front of the starting and ending quotes.
 ```js
