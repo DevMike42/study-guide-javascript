@@ -5,7 +5,7 @@ A computer algorithm is a sequence of steps that is followed to achieve a partic
 
 ## Examples
 
-### Convert Celcius to Fahrenhit
+1. ### Convert Celcius to Fahrenhit
 
 ```js
 function convertToF(celsius) {
@@ -19,7 +19,7 @@ convertToF(30);
 // Output - Fahrenheit converted = 86
 ```
 
-### Reverse a String
+2. ### Reverse a String
 
 ```js
 function reverseString(str) {
