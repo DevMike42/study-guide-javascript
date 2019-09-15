@@ -215,3 +215,47 @@ myString += "This is the second sentence.";
 // Output - This is the first sentence. This is the second sentence.
 ```
 
+5. __Find the length of a String__ - The `.length` property will give you the number of characters in a String.
+
+```js
+var myString = "Michael";
+var myStrLength = myString.length;
+console.log(myStrLength);
+
+// Output - 7
+```
+
+6. __Bracket Notation__ - Bracket notation is used to find the value of a specific character within a String or Array. The first character will be located at `[0]`
+
+Finding the `Nth` letter in a String
+```js
+var myStr = "ABCDEFG";
+firstLetterOfMyStr = myStr[0]; // Output - A
+thirdLetterOfMyStr = mystr[2]; // Output - C
+```
+
+Finding the `last` letter in a String
+```js
+var myName = "Michael";
+lastLetterOfMyName = myName[myName.length -1];
+// .length = 7
+// 7 - 1 = 6
+// The last character in myName is located at myName[6]
+```
+
+Finding the `Nth-to-last` letter in a String
+```js
+var myName = "Michael";
+var secondToLastLetterOfMyName = myName[myName.length -2]; // Output - e
+var thirdToLastLetterOfMyName = myName[myName.length -3]; // Output - a
+```
+
+7. __String Immutability__ - Within a String, values are ***immutable*** which means they cannot be changed. The entire value of a String can be changed but the characters alone cannot.
+
+```js
+var myStr = "Bob";
+myStr[0] = "J"; // Will not work
+
+myStr = "Job"; // The correct solution
+```
+
