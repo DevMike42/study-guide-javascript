@@ -162,20 +162,22 @@ var x = 10;
 ## **Strings**
 
 1. __Literal Quotes within Strings__ - To insert literal quotes within the quotes of a defined string, use `\` in front of the starting and ending quotes.
-```js
-var myString = "I am a \"quote within\" a string.";
-```
-```
-Output = I am a "quote within" a string.
-```
+
+    ```js
+    var myString = "I am a \"quote within\" a string.";
+    ```
+    ```
+    Output = I am a "quote within" a string.
+    ```
 
 2. __Using Single Quotes in Strings__ - Single or Double quotes function the same individually. Single quotes can be used if for example defining an `<a>` tag with attributes.
-```js
-var myTag = '<a href="http://www.example.com" target="_blank">Link</a>';
-```
-```
-Output = <a href="http://www.example.com" target="_blank">Link</a>
-```
+
+    ```js
+    var myTag = '<a href="http://www.example.com" target="_blank">Link</a>';
+    ```
+    ```
+    Output = <a href="http://www.example.com" target="_blank">Link</a>
+    ```
 
 3. __Escape Sequences__ - Gives you the ability to add certain characters and formatting to a string that you would not normally be able to type out. (ex. a backslash, tab, or newline, etc.)
 
@@ -200,62 +202,125 @@ Output = <a href="http://www.example.com" target="_blank">Link</a>
 
 4. __Concatenating Strings using the Plus Operator__ - Build new strings out of other strings by concatentating them together.
 
-```js
-var myString = "This is the start. " + "This is the end";
+    ```js
+    var myString = "This is the start. " + "This is the end";
 
-// Output - This is the start. This is the end.
-```
+    // Output - This is the start. This is the end.
+    ```
 
 5. __Concatentating Strings using the += Operator__ - The += operator concatenates one string onto the end of another.
 
-```js
-var myString = "This is the first sentence. ";
-myString += "This is the second sentence.";
+    ```js
+    var myString = "This is the first sentence. ";
+    myString += "This is the second sentence.";
 
-// Output - This is the first sentence. This is the second sentence.
-```
+    // Output - This is the first sentence. This is the second sentence.
+    ```
 
 5. __Find the length of a String__ - The `.length` property will give you the number of characters in a String.
 
-```js
-var myString = "Michael";
-var myStrLength = myString.length;
-console.log(myStrLength);
+    ```js
+    var myString = "Michael";
+    var myStrLength = myString.length;
+    console.log(myStrLength);
 
-// Output - 7
-```
+    // Output - 7
+    ```
 
 6. __Bracket Notation__ - Bracket notation is used to find the value of a specific character within a String or Array. The first character will be located at `[0]`
 
-Finding the `Nth` letter in a String
-```js
-var myStr = "ABCDEFG";
-firstLetterOfMyStr = myStr[0]; // Output - A
-thirdLetterOfMyStr = mystr[2]; // Output - C
-```
+    Finding the `Nth` letter in a String
+    ```js
+    var myStr = "ABCDEFG";
+    firstLetterOfMyStr = myStr[0]; // Output - A
+    thirdLetterOfMyStr = mystr[2]; // Output - C
+    ```
 
-Finding the `last` letter in a String
-```js
-var myName = "Michael";
-lastLetterOfMyName = myName[myName.length -1];
-// .length = 7
-// 7 - 1 = 6
-// The last character in myName is located at myName[6]
-```
+    Finding the `last` letter in a String
+    ```js
+    var myName = "Michael";
+    lastLetterOfMyName = myName[myName.length -1];
+    // .length = 7
+    // 7 - 1 = 6
+    // The last character in myName is located at myName[6]
+    ```
 
-Finding the `Nth-to-last` letter in a String
-```js
-var myName = "Michael";
-var secondToLastLetterOfMyName = myName[myName.length -2]; // Output - e
-var thirdToLastLetterOfMyName = myName[myName.length -3]; // Output - a
-```
+    Finding the `Nth-to-last` letter in a String
+    ```js
+    var myName = "Michael";
+    var secondToLastLetterOfMyName = myName[myName.length -2]; // Output - e
+    var thirdToLastLetterOfMyName = myName[myName.length -3]; // Output - a
+    ```
 
 7. __String Immutability__ - Within a String, values are ***immutable*** which means they cannot be changed. The entire value of a String can be changed but the characters alone cannot.
 
-```js
-var myStr = "Bob";
-myStr[0] = "J"; // Will not work
+    ```js
+    var myStr = "Bob";
+    myStr[0] = "J"; // Will not work
 
-myStr = "Job"; // The correct solution
-```
+    myStr = "Job"; // The correct solution
+    ```
+
+-------------------------------------------------------------------------------
+
+## **Arrays**
+
+1. __Nested Arrays__ - Arrays can be nested within each other. However, I am not sure when this would be benefitial.
+
+    ```js
+    var nestedArr = [[4,5,2], [22,55,66]];
+    ```
+
+2. __Array Indexes__ - Data in Arrays can be accessed using indexes in the same way as Strings.
+
+    ```js
+    var myArr = [34, 55, 123, 2, 8];
+    var myData = myArr[1]; // Output - 55 (2nd value in the array at Index 1)
+    ```
+
+    Data can also be altered using indexes
+    ```js
+    var myArr = [34, 55, 123, 2, 8];
+    myArr[1] = 45; // Output - Changes 2nd value of myArr at index 1 from 55 to 45
+    ```
+
+    Accessing data in Multi Dimensional Arrays using indexes
+    ```js
+    var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+    var myData = myArray[2][1]; // Output - myData is = 8
+    ```
+
+3. __.push()__ - Takes one more parameters and pushes them onto the end of an Array.
+
+    ```js
+    var myArray = [["John", 23], ["cat", 2]];
+    myArray.push(["dog", 3]);
+    // myArray is now [["John", 23], ["cat", 2], ["dog", 3]]
+    ```
+
+4. __.pop()__ - Used to "pop" a value off the `end` of an Array. "Popped" values can be stored into variables as well.
+
+    ```js
+    var myArray = [["John", 23], ["cat", 2]];
+    var removedFromMyArray = myArray.pop();
+    // myArray is now = [["John", 23]]
+    // removedFromMyArray is = ["cat", 2]
+    ```
+
+5. __.shift()__ - Used to remove the `first` value from an Array. The remaining values are ***shifted*** to the front.
+
+    ```js
+    var myArray = [["John", 23], ["dog", 3]];
+    var removedFromMyArray = myArray.shift();
+    // myArray is now = [["dog", 3]]
+    // removedFromMyArray = [["John", 23]]
+    ```
+
+6. __.unshift()__ - Used to add a parameter to the `front` of an Array. Original Array parameters are shifted towards the end of the Array.
+
+    ```js
+    var myArray = [["John", 23], ["dog", 3]];
+    myArray.unshift(["Paul", 35]);
+    // myArray is now = [["Paul", 35], ["John", 23], ["dog", 3]]
+    ```
 
