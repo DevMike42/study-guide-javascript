@@ -324,3 +324,55 @@ var x = 10;
     // myArray is now = [["Paul", 35], ["John", 23], ["dog", 3]]
     ```
 
+-------------------------------------------------------------------------------
+
+## **Functions**
+
+### Overview 
+Functions are reusable lines of code that perform tasks. 
+
+1. __Basic Function__ - A basic function can be created and named to be used or "called" later on.
+
+    ```js
+    function functionName() {
+        console.log("This is what my function does");
+    }
+    ```
+    The work the function is to perform is located with in the curly brackets {}
+
+    ```js
+    functionName();
+    // Output - "This is what my function does" will be printed to the dev console
+    ```
+    The function can be used or "called" using parenthesis ()
+
+2. __Passing Values to Functions with Parameters & Arguments__  
+
+    `Parameters` or `Params` are essentially variables or placeholders for the values that are to be input into the function when it is called. 
+
+    ```js
+    function functionWithArgs(param1, param2) {
+        console.log(param1, param2);
+    }
+    ```
+    Locaton within the parenthesis matter when declaring and calling a function
+
+    ```js
+    functionWithArgs("Hello", "World");
+    // Output - "Hello" "World" will be printed in the dev console
+    ```
+    The actual values that are passed to the parameters when the function is called are known as `Arguements`
+
+3. __Global & Local Scope__ - `Scope` refers to the visibility of variables. Variables declared outside of a function block are considered to have `Global` scope and can be seen everywhere in your JavaScript.
+
+    ```js
+    var globalVar = 10;
+
+    function functionBlock() {
+        var notGlobal = 5
+    }
+    ```
+    The globalVar can be seen everywhere in the code. However, notGlobal can only be seen within the functionBlock function and will be undefined if trying to use it outside of the functionBlock function
+
+    The variable, notGlobal, is known to have `Local` scope and can only be seen within the function
+
